@@ -5,7 +5,7 @@ int upperBound(vector<int> &arr, int x, int n)
 	while (low <= high)
 	{
 		int mid = (low + high) / 2;
-		if (arr[mid] > x)
+		if (arr[mid] > x) // It is similar to the lower Bound just remove = operator in condition
 		{
 			ans = mid;
 			high = mid - 1;
